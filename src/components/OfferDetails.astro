@@ -1,0 +1,104 @@
+---
+import { Image } from "astro:assets";
+import offer from "@/assets/offer.png";
+import plus from "@/assets/c187a84a-e8ab-4ddc-a1f5-3f890e8c4186.png";
+---
+
+<section class="bg-black py-10">
+  <div class="container mx-auto px-2">
+    <div class="flex flex-col md:flex-row items-center gap-4">
+      <div class="md:w-1/2 flex justify-center items-center">
+        <Image
+          src={offer}
+          alt="Detalles de la oferta"
+          width={553}
+          height={759}
+        />
+      </div>
+      <div class="md:w-1/2">
+        
+        <div class="grid grid-flow-col">
+          <div class="flex items-center px-3">
+            <span
+              class="free text-2xl md:text-7xl"
+              style="font-weight: 700; font-style: normal; color: rgb(255, 255, 255);"
+              >¡gratis!</span
+            >
+          </div>
+          <div>
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 offer">
+              DETALLES DE LA OFERTA
+            </h2>
+            <h2 class="text-2xl sm:text-2xl md:text-4xl font-bold mb-2 text-white">
+              ESTANCIA EN
+            </h2>
+            <h2 class="text-1xl sm:text-2xl md:text-3xl mb-6 text-white">
+              REUNION RESORT
+            </h2>
+            <div class="relative text-white px-12 py-10 box">
+              <Image
+                src={plus}
+                alt=""
+                class="plus"
+                width={129}
+                height={145}
+              />
+              <ul
+                class="list-disc text-1xl sm:text-2xl md:text-3xl"
+                style="list-style-type: circle;"
+              >
+                <li>Destino: Reunión Resort</li>
+                <li>Duración: 5 días / 4 noches</li>
+                <li>Capacidad: Hasta 6 personas</li>
+                <li>Precio: $995</li>
+                <li>
+                  <b>Incluye:</b>
+                  <ul
+                    class="list-disc list-square ps-5 mt-2 space-y-1"
+                    style="list-style-type: square;"
+                  >
+                    <li>
+                      Acceso: A 12 piscinas con agua temperada y jacuzzi (con
+                      tarjeta electrónica).
+                    </li>
+                    <li>Carro de cortesía: Con millas ilimitadas.</li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="text-1xl sm:text-1xl md:text-2xl text-white mt-5">
+                Nota: "Taxes, Fees and Car Insurance, No están incluidos."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .offer {
+    color: rgb(192, 158, 102);
+  }
+  .box {
+    border: 4px solid white;
+  }
+  .free {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    text-transform: uppercase;
+  }
+  .plus{
+    position: absolute;
+    right: 30px;
+    top:-80px;
+  }
+  @media only screen and (max-width: 920px) {
+
+    .plus { 
+      width: 80px;
+      right: 20px;
+      top:-40px; 
+    }
+
+}
+</style>

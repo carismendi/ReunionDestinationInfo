@@ -1,0 +1,123 @@
+---
+import { Image } from "astro:assets";
+import circle from "@/assets/b47eb9d1b058da944f22561baa779af2.gif";
+import arrows from "@/assets/arrows.gif";
+---
+
+<section class="bg-black py-10">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-4">
+      <div class="flex justify-center items-center md:w-2/5">
+        <div class="parent">
+          <Image src={circle} alt="" class="image1" width={341} height={341} />
+          <Image src={arrows} alt="" class="image2" width={104} height={125} />
+          <p
+            class="text-1"
+            style="font-size: 24px; color: rgb(255, 255, 255); line-height: 44px; letter-spacing: 0em; --pY_8zA: 0; text-transform: none; --oJepFA: 0; --uYCVzQ: none; list-style-type: none;"
+          >
+            <span
+              style="font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration: none;"
+              >¡Atención! Esto <b>no es <br/> tiempo compartido.</b></span
+            >
+            <br/>
+            <span
+              style="font-weight: 700; font-style: normal; color: rgb(192, 158, 102); font-kerning: none; text-decoration: none;"
+              >NEVER TIME SHARE!</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="md:w-3/5">
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 offer">PLAN ESCAPE</h2>
+        <h2 class="text-2xl sm:text-2xl md:text-4xl font-bold mb-2 text-white">
+          ESCOGE 1 DESTINO ENTRE
+        </h2>
+        <h2
+          class="text-1xl sm:text-2xl md:text-3xl mb-6 text-white"
+          style="text-transform: uppercase;"
+        >
+          cancún (México) o punta cana (república dominicana)
+        </h2>
+        <div class="grid grid-flow-col">
+          <div>
+            <div class="text-white px-12 py-10 box">
+              <ul class="list-disc text-1xl sm:text-2xl md:text-3xl" style="list-style-type: circle;">
+                <li>
+                  Destino: Cancún, México o Punta Cana, República Dominicana.
+                </li>
+                <li>Duración: 4 días y 3 noches</li>
+                <li>Capacidad: 2 personas</li>
+                <li>Precio: $995</li>
+                <li>
+                  <b>Incluye:</b>
+                  <ul
+                    class="list-disc list-square ps-5 mt-2 space-y-1"
+                    style="list-style-type: square;"
+                  >
+                    <li>Hospedaje: En uno de los hoteles participantes.</li>
+                    <li>
+                      Alimentación: Sistema "Todo Incluido" (desayuno, almuerzo,
+                      cena y bebidas).
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="text-1xl sm:text-1xl md:text-2xl text-white mt-5">
+                Nota: "Taxes, Fees and Car Insurance, No están incluidos."
+              </p>
+            </div>
+            <div class="flex flex-col items-end mt-5">
+              <a href="https://wa.me/17868502223" target="_blank" class="btn text-1xl md:text-2xl">RESERVA AHORA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .offer {
+    color: rgb(192, 158, 102);
+  }
+  .box {
+    border: 4px solid white;
+  }
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 341px;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image2 {
+    position: absolute;
+    bottom: -40px;
+    left: 95px;
+    transform: rotate(-70deg);
+  }
+  .text-1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+  .btn{
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-kerning: none;
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.9) 0px 0.963742px 5.28613px;
+    filter: opacity(1);
+    border: 4px solid white;
+    padding-inline: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+</style>

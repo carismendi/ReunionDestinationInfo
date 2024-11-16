@@ -1,0 +1,38 @@
+---
+import video1 from "@/assets/videos/1b41cf6b8aaa62ae12912000fdcc89af.mp4";
+import video2 from "@/assets/videos/bc4c851589214454164dc9ec1ddf5ee6.mp4";
+import video3 from "@/assets/videos/1e2133fc092504800ed8451d7d8c71db.mp4";
+---
+
+<section class="py-20 bg-black pb-40">
+  <div class="container mx-auto px-1">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="text-white p-1">
+        <video class="w-full" controls>
+          <source src={video1} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="text-white p-1">
+        <video class="w-full h-full" controls>
+          <source src={video2} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="text-white p-1">
+        <video class="w-full" controls>
+          <source src={video3} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
